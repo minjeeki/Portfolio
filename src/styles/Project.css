@@ -1,0 +1,91 @@
+/* Project.css */
+.project-card {
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-name {
+  color: #66B2FF;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.skill-stack {
+  display: flex;
+  gap: 10px;
+}
+
+.skill-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.desc-info {
+  min-height: 200px;  /* 호버 시 컨텐츠 변경할 때 높이 유지 */
+}
+
+.project-description {
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.project-preview {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* 호버 시 표시될 내용 */
+.hover-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.role-info h4 {
+  color: #66B2FF;
+  margin-bottom: 12px;
+}
+
+.role-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.role-info li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.link-item img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.2s;
+}
+
+.link-item:hover img {
+  opacity: 0.8;
+}
