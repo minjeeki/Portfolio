@@ -14,7 +14,7 @@ const Profile = () => {
       <div className="profile-content">
         <div className="profile-info">
           <h3 className="profile-name">{user.name}</h3>
-          <div className="profile-motto">함께 성장하고 싶은 개발자</div>
+          <div className="profile-motto">성장하고 싶은 개발자</div>
         </div>
 
         <div className="profile-divider"></div>

@@ -128,7 +128,7 @@ export const projectsData = {
       links: [
         {
           type: "github",
-          url: "https://github.com/nninzy/crazy_archieve",
+          url: "https://github.com/nninzy/crazy_archive/",
           icon: linkIcons.github
         },
         {
@@ -158,7 +158,7 @@ export const projectsData = {
       links: [
         {
           type: "github",
-          url: "https://github.com/minjeeki/Portfolio",
+          url: "https://github.com/nninzy/daangn-clone/",
           icon: linkIcons.github
         },
         {
