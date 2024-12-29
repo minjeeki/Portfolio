@@ -13,8 +13,8 @@ import emailIcon from "../assets/icons/email.png"
 import bookIcon from "../assets/icons/book.png"
 import dictionaryIcon from "../assets/icons/dictionary.png"
 import scheduleIcon from "../assets/icons/schedule.png"
-import cubeIcon from "../assets/icons/cube.png"
-import starIcon from "../assets/icons/star.png"
+// import cubeIcon from "../assets/icons/cube.png"
+// import starIcon from "../assets/icons/star.png"
 
 
 const Header = () => {
