@@ -58,6 +58,16 @@ const EmailForm = ({ isOpen, onClose }) => {
     alert('이메일 주소가 복사되었습니다!');
     onClose();
   };
+
+  const handleCancel = () => {
+    setFormData({
+      name: '',
+      email: '',
+      title: '',
+      message: ''
+    });
+    onClose();
+  };
   
   if (!isOpen) return null;
   
@@ -111,8 +121,8 @@ const EmailForm = ({ isOpen, onClose }) => {
                 이메일 주소만 필요하신가요?
               </button>
             </div>
-            <div class="form-btn">
-              <button type="button" onClick={onClose} className="cancel-button">
+            <div className="form-btn">
+              <button type="button" onClick={handleCancel} className="cancel-button">
                 취소
               </button>
               <button type="submit" className="submit-button">

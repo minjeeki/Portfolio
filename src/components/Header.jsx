@@ -46,10 +46,10 @@ const Header = () => {
             onClick={toggleTheme}
             title="테마 전환"
             >
-            {theme === 'dark' ? '☀️' : '🌙'}
+            {theme === 'dark' ? '🌤️' : '🌙'}
           </button>
           <button 
-            className="icon-button"
+            className="icon-button email-button"
             onClick={() => setIsEmailFormOpen(true)}
             title="이메일 보내기"
           >

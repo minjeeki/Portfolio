@@ -30,7 +30,7 @@
 .activities-list {
   position: relative;
   padding-left: 2rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid var(--text-primary);
 }
 
 .activity-item {
@@ -46,11 +46,11 @@
 .activity-item::before {
   content: '';
   position: absolute;
-  left: -2.1rem;
+  left: -2.25rem;
   top: 0.5rem;
   width: 8px;
   height: 8px;
-  background-color: #fff;
+  background-color: var(--text-primary);
   border-radius: 50%;
 }
 
@@ -72,12 +72,15 @@
   margin: 2rem auto 0;
   padding: 0.5rem 2rem;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--toggle-btn-bg);
+  color: var(--text-secondary);
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .show-more-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--text-secondary);
+  color: var(--bg-primary);
+
 }
