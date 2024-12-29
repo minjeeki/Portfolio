@@ -1,73 +1,89 @@
-// components/Project.jsx
-import { useState } from 'react';
-import './../styles/Project.css';
+import { useState } from "react";
+import "./../styles/Project.css";
 
 const Project = ({ project }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const { name, skills, description, role, images, githubUrl, deployUrl, notionUrl } = project;
+  const { name, devPeriod, description, techStack, contributions, images, links } =
+    project;
 
   return (
-    <article 
+    <article
       className="project-card"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* 상단 기본 정보 */}
-      <div className="main-info">
-        <h3 className="project-name">{name}</h3>
+      <div className="project-base">
+        <div className="header-info">
+          <h3 className="project-name">{name}</h3>
+          <span className="project-period">{devPeriod}</span>
+        </div>
+
+        <p className="project-description">{description}</p>
+
+        <div className="project-images">
+          {images?.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`${name} 프로젝트 이미지`}
+              className="project-preview"
+            />
+          ))}
+        </div>
+
         <div className="skill-stack">
-          {skills.map((skill, index) => (
-            <span key={index} className="skill-item">{skill}</span>
+          {techStack.map((skill, index) => (
+            <span key={index} className="skill-item">
+              {skill}
+            </span>
           ))}
         </div>
       </div>
 
-      {/* 하단 상세 정보 - hover에 따라 다른 내용 표시 */}
-      <div className="desc-info">
-        {!isHovered ? (
-          <>
-            <p className="project-description">{description}</p>
-            <div className="project-images">
-              {images.slice(0, 1).map((image, index) => (
-                <img 
-                  key={index}
-                  src={image}
-                  alt={`${name} 프로젝트 이미지`}
-                  className="project-preview"
-                />
-              ))}
-            </div>
-          </>
-        ) : (
+      {isHovered && (
+        <div className="hover-overlay">
           <div className="hover-content">
-            <div className="role-info">
-              <h4>담당 역할</h4>
-              <ul>
-                {role.split(',').map((item, index) => (
-                  <li key={index}>{item.trim()}</li>
+            <div className="header-info">
+              <h3 className="project-name">{name}</h3>
+              <span className="project-period">{devPeriod}</span>
+            </div>
+
+            <p className="project-description">{description}</p>
+
+            <div className="contributions-section">
+              <h4>주요 기여</h4>
+              <ul className="contributions-list">
+                {contributions.map((item, index) => (
+                  <li key={index}>{item}</li>
                 ))}
               </ul>
             </div>
-            <div className="project-links">
-              {githubUrl && (
-                <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="link-item">
-                  <img src="/assets/icons/github-icon.png" alt="GitHub" />
-                </a>
-              )}
-              {deployUrl && (
-                <a href={deployUrl} target="_blank" rel="noopener noreferrer" className="link-item">
-                  <img src="/assets/icons/deploy-icon.png" alt="배포 링크" />
-                </a>
-              )}
-              {notionUrl && (
-                <a href={notionUrl} target="_blank" rel="noopener noreferrer" className="link-item">
-                  <img src="/assets/icons/notion-icon.png" alt="Notion" />
-                </a>
-              )}
+
+            <div className="tech-links-row">
+              <div className="skill-stack">
+                {techStack.map((skill, index) => (
+                  <span key={index} className="skill-item">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+              <div className="project-links">
+                {links.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-item"
+                  >
+                    <img src={link.icon} alt={link.type} />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </article>
   );
 };

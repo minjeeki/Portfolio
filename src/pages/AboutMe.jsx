@@ -1,17 +1,19 @@
+import usePageTitle from "../hooks/usePageTitle";
+
 import Header from "../components/Header";
-import Profile from "../components/Profile";
 import Footer from "../components/Footer";
 
-const ToyProjects = () => {
+const AboutMe = () => {
+  usePageTitle('자기소개')
+
   return (
     <>
       <Header />
       <main>
-        <Profile />
       </main>
       <Footer />
     </>
   )
 }
 
-export default ToyProjects;
+export default AboutMe;

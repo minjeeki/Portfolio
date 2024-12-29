@@ -1,0 +1,83 @@
+.activities-section {
+  padding: 2rem;
+}
+
+.activities-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.year-section {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.year-marker {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.year {
+  font-weight: bold;
+  position: relative;
+}
+
+.activities-list {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.activity-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.activity-item::before {
+  content: '';
+  position: absolute;
+  left: -2.1rem;
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.activity-date {
+  font-size: 0.9rem;
+}
+
+.activity-content {
+  min-width: 0;
+}
+
+.activity-title {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.show-more-btn {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.5rem 2rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

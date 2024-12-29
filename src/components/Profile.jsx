@@ -1,66 +1,73 @@
 import ProfileImage from "./ProfileImage";
-import githubIcon from '../assets/github-logo.png';
-import velogIcon from '../assets/velog-logo.png';
 import { useUser } from '../App';
 import './../styles/Profile.css';
 
 const Profile = () => {
   const { user } = useUser();
-  const socialLinks = [
-    {
-      id: 'github',
-      url: 'https://github.com/minjeeki',
-      icon: githubIcon,
-      label: 'GitHub'
-    },
-    {
-      id: 'velog',
-      url: 'https://velog.io/@minjeeki/posts',
-      icon: velogIcon,
-      label: 'Velog'
-    }
-  ];
 
   return (
-    <section>
+    <section className="profile-section">
       <div className="profile-img-section">
         <ProfileImage size="lg" showEmotionIcon={true} />
       </div>
-      <div>
-        <h3>{user.name}</h3>
-        <div>함께 성장하고 싶은 개발자</div>
-      </div>
-      <div>
-        <h4>Position</h4>
-        <div>Front-end Developer</div>
-      </div>
-      <div>
-        <h4>Skills</h4>
-        <div>JavaScript, Python, Django, Vue, React ...</div>
-      </div>
-      <div>
-        <h4>More About me</h4>
-        <div className="social-links">
-          {socialLinks.map(({ id, url, icon, label }) => (
-            <a
-              key={id}
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-link"
-              aria-label={label}
-            >
-              <img 
-                src={icon} 
-                alt={`${label} 링크`} 
-                className="social-icon"
-              />
-            </a>
-          ))}
+
+      <div className="profile-content">
+        <div className="profile-info">
+          <h3 className="profile-name">{user.name}</h3>
+          <div className="profile-motto">함께 성장하고 싶은 개발자</div>
+        </div>
+
+        <div className="profile-divider"></div>
+
+        <div className="profile-position">
+          <h4>Position</h4>
+          <div className="position-text">{user.position}</div>
+        </div>
+
+        <div className="profile-divider"></div>
+
+        <div className="profile-skills">
+          <h4>Skills</h4>
+          <div className="skills-list">
+            {user.skills && user.skills.map((skill) => (
+              <div key={skill.name} className="skill-badge">
+                <img 
+                  src={skill.icon} 
+                  alt={skill.name}
+                  className="skill-icon"
+                  title={skill.name}
+                />
+              </div>
+            ))}
+            <div className="skill-more" title="다음은?">...</div>
+          </div>
+        </div>
+
+        <div className="profile-divider"></div>
+
+        <div className="profile-links">
+          <h4>More about me</h4>
+          <div className="social-links">
+            {user.links && user.links.map((link) => (
+              <a
+                key={link.type}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <img 
+                  src={link.icon}
+                  alt={link.type}
+                  className="social-icon"
+                />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Profile;

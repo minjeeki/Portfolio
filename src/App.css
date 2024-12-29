@@ -1,11 +1,22 @@
-body {
-  margin: 0;
-  width: 100vw;
+#root {
+  width: 100%;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-primary);
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  width : 80%;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
 }

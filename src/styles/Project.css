@@ -1,16 +1,31 @@
-/* Project.css */
 .project-card {
+  width: 100%;
+  position: relative;
   border-radius: 8px;
+  margin-bottom: 40px;  /* 프로젝트 카드 사이 간격 */
+}
+
+.project-base, .hover-overlay {
   padding: 20px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  border-radius: 8px;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
+.project-base {
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  height: 100%;
 }
 
-.main-info {
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,74 +33,125 @@
 }
 
 .project-name {
-  color: #66B2FF;
+  color: #66b2ff;
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
+}
+
+.project-period {
+  color: #666;
+  font-size: 16px;
+}
+
+.hover-overlay .project-period {
+  color: #fff;
+}
+
+.project-description {
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #666;
+}
+
+.hover-overlay .project-description {
+  color: #fff;
 }
 
 .skill-stack {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;  /* 이미지와의 간격 */
 }
 
 .skill-item {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(102, 178, 255, 0.1);
   padding: 4px 12px;
   border-radius: 12px;
   font-size: 14px;
+  border: 1px solid rgba(102, 178, 255, 0.3);
+  color: #666;
 }
 
-.desc-info {
-  min-height: 200px;  /* 호버 시 컨텐츠 변경할 때 높이 유지 */
+.hover-overlay .skill-item {
+  color: white;
 }
 
-.project-description {
-  margin-bottom: 16px;
-  line-height: 1.5;
+.project-images {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0;
 }
 
 .project-preview {
-  width: 100%;
-  height: auto;
+  width: 250px;
+  height: 150px;
   border-radius: 4px;
   object-fit: cover;
 }
 
-/* 호버 시 표시될 내용 */
 .hover-content {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.role-info h4 {
-  color: #66B2FF;
-  margin-bottom: 12px;
+.contributions-section {
+  margin-bottom: 20px;
+  flex-grow: 1;
 }
 
-.role-info ul {
+.contributions-section h4 {
+  color: #66b2ff;
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
+.contributions-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.role-info li {
+.contributions-list li {
   margin-bottom: 8px;
   line-height: 1.5;
+  font-size: 14px;
+  color: white;
+}
+
+.tech-links-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .project-links {
   display: flex;
   gap: 16px;
-  margin-top: 20px;
+}
+
+.link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
 }
 
 .link-item img {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   transition: opacity 0.2s;
 }
 
-.link-item:hover img {
-  opacity: 0.8;
+.link-item:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.2s;
 }

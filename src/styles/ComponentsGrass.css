@@ -1,0 +1,36 @@
+.component-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 0;
+}
+
+.component-grass-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.component-grass-button {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid darkgray;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.component-grass-button:hover {
+  background-color: var(--bg-primary);
+}
+
+.component-grass-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1105px) {
+  .component-grass-section {
+    margin: 2rem;
+  }
+}
