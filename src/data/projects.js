@@ -48,6 +48,11 @@ export const projectsData = {
       images: projectImages.PORTFOLIO,
       links: [
         {
+          type: "deploy",
+          url: "https://minjee-portfolio.vercel.app/",
+          icon: linkIcons.figma
+        },
+        {
           type: "github",
           url: "https://github.com/minjeeki/Portfolio",
           icon: linkIcons.github
@@ -99,7 +104,7 @@ export const projectsData = {
         {
           type: "github pull request 1",
           url: "https://github.com/continuedev/continue/pull/2568",
-          icon: linkIcons.github
+          icon: linkIcons.deploy
         },
         {
           type: "github pull request 2",
