@@ -151,8 +151,10 @@ const themes = {
 
 ### EmailJS 기반 이메일폼
 
-![emailJS 모달 입력폼](./readme-img/emailJS.png)
-![emailJS 폼 전송 결과](./readme-img/emailJS_result.png)
+<p float="left">
+  <img src="./readme-img/emailJS.png" width="400"/>
+  <img src="./readme-img/emailJS_result.png" width="200" /> 
+</p>
 
 - 모달 형식의 이메일 폼 구현
 
