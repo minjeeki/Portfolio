@@ -77,7 +77,7 @@ const Header = () => {
               <span className="project-count">{projects.toyProjects.length}</span>
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/components" className="nav-link">
               <img src={cubeIcon} /> Components
             </NavLink>
@@ -86,7 +86,7 @@ const Header = () => {
             <NavLink to="/about-me" className="nav-link">
               <img src={starIcon} />About me
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </nav>
 
