@@ -213,7 +213,7 @@
   filter: brightness(0);
 }
 
-[data-theme='dark'] .icon-button:not(.email-button) > img,
+[data-theme='dark'] .icon-button:not(.email-button):not(.menu-button) > img,
 [data-theme='dark'] .nav-link > img {
   filter: brightness(0) invert(1);
 }

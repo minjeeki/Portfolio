@@ -49,14 +49,14 @@
 }
 
 .main-tech-item {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--bg-primary);
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   font-size: 0.8rem;
 }
 
 .main-project-period {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-primary);
   font-size: 0.8rem;
   margin-left: auto;
   margin-top: auto;
