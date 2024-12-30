@@ -155,12 +155,3 @@
   background-color: rgba(255, 255, 255, 0.8);
   transition: background-color 0.2s;
 }
-
-@media (max-width: 1105px) {
-  .project-images {
-    flex-direction: column;
-  }
-  .project-images img:not(:first-child) {
-    display: none;
-  }
-}

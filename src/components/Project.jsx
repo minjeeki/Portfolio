@@ -21,7 +21,7 @@ const Project = ({ project }) => {
         <p className="project-description">{description}</p>
 
         <div className="project-images">
-          {images?.map((image, index) => (
+          {images?.slice(0, window.innerWidth <= 1105 ? 1 : images.length).map((image, index) => (
             <img
               key={index}
               src={image}
