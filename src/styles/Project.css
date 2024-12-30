@@ -157,7 +157,10 @@
 }
 
 @media (max-width: 1105px) {
-  .project-images:not(:first-child) {
+  .project-images {
+    flex-direction: column;
+  }
+  .project-images img:not(:first-child) {
     display: none;
   }
 }
