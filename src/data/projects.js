@@ -14,9 +14,9 @@ export const projectsData = {
       devPeriod: "2024.11.18 - 2024.11.30",
       role: "풀스택 개발 담당",
       contributions: [
-        "dj-rest-auth를 활용한 회원가입 및 로그인 기능 및 영화 상세 & 리뷰 상세 기능 풀스택 구현",
-        "룰렛 라이브러리를 활용한 추천 기능 내 영화 설명 키워드 기반 유해 콘텐츠 필터링 기능 구현",
-        "Teachable Machine을 활용한 인기 50인 배우 내 닮은꼴 배우의 필모그래피 추천 기능 풀스택 구현"
+        "회원가입, 로그인 기능 및 영화 상세 & 리뷰 상세 기능 풀스택 구현",
+        "룰렛 영화 추천 기능 내 키워드 기반 유해 콘텐츠 필터링 기능 구현",
+        "Teachable Machine을 활용한 닮은꼴 배우의 필모 추천 기능 풀스택 구현"
       ],
       images: projectImages.KIKI_MOVIE,
       links: [
