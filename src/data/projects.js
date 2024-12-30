@@ -50,7 +50,7 @@ export const projectsData = {
         {
           type: "deploy",
           url: "https://minjee-portfolio.vercel.app/",
-          icon: linkIcons.figma
+          icon: linkIcons.deploy
         },
         {
           type: "github",
