@@ -6,8 +6,12 @@ const continueImages = import.meta.glob('../assets/projects/continue-pr/*.{gif,j
 const crazyImages = import.meta.glob('../assets/projects/crazy-archive/*.{gif,jpg,jpeg,png}', { eager: true });
 const daangnImages = import.meta.glob('../assets/projects/daangn-clone/*.{gif,jpg,jpeg,png}', { eager: true });
 
-const getImagesFromModule = (moduleImages) => 
-  Object.values(moduleImages).map(module => module.default);
+const getImagesFromModule = (moduleImages) => {
+  console.log(moduleImages)
+  return (
+    Object.values(moduleImages).map(module => module.default)
+  )
+}
 
 export const projectImages = {
   'KIKI_MOVIE': getImagesFromModule(kikiImages),
