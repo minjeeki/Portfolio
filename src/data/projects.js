@@ -104,7 +104,7 @@ export const projectsData = {
         {
           type: "github pull request 1",
           url: "https://github.com/continuedev/continue/pull/2568",
-          icon: linkIcons.deploy
+          icon: linkIcons.github
         },
         {
           type: "github pull request 2",
