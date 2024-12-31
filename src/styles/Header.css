@@ -101,6 +101,7 @@
 }
 
 .header-bottom .nav-link {
+  height: 44px;
   margin: 1rem 0;
   display: flex;
   justify-content: center;
