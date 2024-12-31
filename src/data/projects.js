@@ -39,7 +39,7 @@ export const projectsData = {
       name: "자기소개_포트폴리오",
       description: "SSAFY 2학기 팀빌딩을 위한 자기소개 사이트",
       techStack: ["React"],
-      devPeriod: "2024.12.24 - 2024.12.30",
+      devPeriod: "2024.12.26 - 2024.12.30",
       contributions: [
         "프로젝트 기획 및 피그마를 활용한 목업 디자인",
         "React를 활용한 자기소개 포트폴리오 구현",
