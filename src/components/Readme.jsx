@@ -13,10 +13,6 @@ const Readme = () => {
         </p>
 
         <p className="readme-paragraph">
-          1학기에는 SSAFY 12기 <u>파이썬 비전공반</u>에서 학습했습니다. MBTI는 <u>ESTJ ~ ENFJ</u> 정도 나오고 있습니다. ✨
-        </p>
-
-        <p className="readme-paragraph">
           2학기 공통 프로젝트에서 <u>트랙 우관 / 프론트엔드</u>를 희망합니다. 하지만 백엔드도 기회가 된다면 배우고 싶습니다.
           
           💻 이번 프로젝트를 통해 <u>프론트엔드에 대해 깊게 생각해보고, 성공적인 프로젝트를 만들고 싶습니다</u>. 🎯
