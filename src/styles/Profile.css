@@ -24,6 +24,7 @@
   min-width: 240px;
   color: var(--text-primary);
   padding: 0 2rem;
+  margin-bottom: 5rem;
 }
 
 .profile-img-section {
