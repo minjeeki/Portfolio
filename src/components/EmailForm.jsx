@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useUser } from '../App';
 import emailjs from '@emailjs/browser';
 import '../styles/EmailForm.css';
 
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 const EmailForm = ({ isOpen, onClose }) => {
+  const { user } = useUser();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -54,7 +56,7 @@ const EmailForm = ({ isOpen, onClose }) => {
   };
   
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('hbmj1017@naver.com');  // 여기에 본인 이메일 주소 입력
+    navigator.clipboard.writeText(user.email);  // 여기에 본인 이메일 주소 입력
     alert('이메일 주소가 복사되었습니다!');
     onClose();
   };
