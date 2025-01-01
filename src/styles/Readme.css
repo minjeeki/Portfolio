@@ -1,5 +1,5 @@
 .readme-container {
-  margin: 2rem;
+  margin: 2rem 0;
   border: 1px solid darkgray;
   padding: 1.5rem;
   border-radius: 5px;
@@ -11,88 +11,25 @@
 }
 
 .readme-content {
-  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.5rem;
   line-height: 2;
   color: var(--text-primary);
 }
 
-.readme-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  line-height: 2;
-  color: var(--text-primary);
+.readme-content .readme-sentence {
+  font-size: 1.1rem;
 }
 
-.readme-content u {
-  text-decoration: none;
+.readme-content .readme-sentence:first-child {
+  font-size: 1.5rem;
 }
 
-.readme-content u:nth-of-type(5n+1) {
-  border: 1px solid #7c83fd;
-  border-radius: 4px;
-  padding: 0 6px;
-  transition: background-color 0.2s ease;
-}
-
-.readme-content u:nth-of-type(5n+1):hover {
-  background-color: rgba(124, 131, 253, 0.1);
-}
-
-.readme-content u:nth-of-type(5n+2) {
-  background: linear-gradient(180deg, transparent 65%, rgba(255, 196, 0, 0.3) 0);
-  transition: background 0.3s ease;
-}
-
-.readme-content u:nth-of-type(5n+2):hover {
-  background: linear-gradient(180deg, transparent 65%, rgba(255, 196, 0, 0.5) 0);
-}
-
-.readme-content u:nth-of-type(5n+3) {
-  background: linear-gradient(90deg, #ff6b6b, #feca57);
-  background-repeat: no-repeat;
-  background-size: 100% 2px;
-  background-position: 0 100%;
-  transition: background-size 0.2s ease;
-}
-
-.readme-content u:nth-of-type(5n+3):hover {
-  background-size: 100% 100%;
-  color: white;
-}
-
-.readme-content u:nth-of-type(5n+4) {
-  border: 1px dashed #4ecdc4;
-  border-radius: 4px;
-  padding: 0 6px;
-  transition: all 0.2s ease;
-}
-
-.readme-content u:nth-of-type(5n+4):hover {
-  background-color: #4ecdc4;
-  color: white;
-}
-
-.readme-content u:nth-of-type(5n) {
-  background: linear-gradient(90deg, 
-    rgba(255, 107, 107, 0.3) 0%, 
-    rgba(254, 202, 87, 0.3) 50%, 
-    rgba(255, 107, 107, 0.3) 100%);
-  background-size: 200% 100%;
-  animation: wave 2s infinite;
-  background-position: 0 88%;
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-}
-
-@keyframes wave {
-  0% { background-position: 100% 88%; }
-  50% { background-position: 0 88%; }
-  100% { background-position: 100% 88%; }
-}
-
-.readme-paragraph {
+.readme-content .readme-sentence:nth-child(2) {
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.readme-content .readme-sentence:last-child {
+  margin-top: 1.25rem;
 }

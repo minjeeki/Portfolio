@@ -7,7 +7,6 @@ const crazyImages = import.meta.glob('../assets/projects/crazy-archive/*.{gif,jp
 const daangnImages = import.meta.glob('../assets/projects/daangn-clone/*.{gif,jpg,jpeg,png}', { eager: true });
 
 const getImagesFromModule = (moduleImages) => {
-  console.log(moduleImages)
   return (
     Object.values(moduleImages).map(module => module.default)
   )
