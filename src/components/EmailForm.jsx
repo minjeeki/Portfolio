@@ -1,9 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useUser } from '../App';
 import emailjs from '@emailjs/browser';
 import '../styles/EmailForm.css';
-
-emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 const EmailForm = ({ isOpen, onClose }) => {
   const { user } = useUser();
@@ -13,6 +11,9 @@ const EmailForm = ({ isOpen, onClose }) => {
     title: '',
     message: ''
   });
+  useEffect(() => {
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+  }, []);
   
   const handleSubmit = async (e) => {
     e.preventDefault();
