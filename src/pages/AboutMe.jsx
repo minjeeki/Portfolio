@@ -1,3 +1,4 @@
+import { profileData } from '../data/profile'
 import usePageTitle from "../hooks/usePageTitle";
 
 import Header from "../components/Header";

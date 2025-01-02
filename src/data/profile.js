@@ -16,7 +16,7 @@ export const profileData = {
   email: "hbmj1017@naver.com",
   birth: "1996.10.17",
   position: "Frontend Developer",
-  slogan: "왜?를 궁금해하는 개발자",
+  slogan: "함께 성장하는 개발자",
   keywords: [
     "열정적인", "소통을 잘하는", "책임감 있는", "분석적인", "사용자 경험을 중시하는", "목표 지향적인", "협업 지향적인",
     "정리를 잘하는", "기록을 잘하는"
@@ -29,35 +29,36 @@ export const profileData = {
     "팀 프로젝트에서는 🤝소통과 협업🤝을 중요시하며, 개발 과정에서 발생하는 문제를 해결하기 위해 적극적으로 참여합니다.",
     "또한 📝정리와 기록📝을 중요하게 생각하며, 이를 통해 지식을 체계적으로 정리하고 성장하는 데 도움을 얻고 있습니다.",
     "팀에서는 노션을 통한 프로젝트 기록 관리 및 원활한 의사 소통을 위한 서포터 역할을 해왔습니다.",
-    "평소에는 영화 보는 것을 좋아하고, 반려견 모카와 여가 시간 보내는 것을 좋아합니다",
-    "사람들의 삶에 도움이 되는 정보를 효과적이고 쉽게 전달해줄 수 있는 서비스를 개발하는 개발자가 되고 싶습니다",
+    "평소에는 영화 보는 것을 좋아하고, 반려견과 함께 여가 시간을 보내곤 합니다.",
+    "리액트에 대해서 제대로 공부하고 싶어 이번 왓에버 멘토링에 참여하게 되었습니다.", 
+    "사람들의 삶에 도움이 되는 데이터를 효과적이고 쉽게 전달해줄 수 있는 서비스를 개발하는 개발자가 되고 싶습니다.",
     "✨잘 부탁드립니다✨"
   ],
   language_qualification: [
     {
       name: "TOEIC 775점",
-      date: "2024-08-25",
-      organization: "",
+      date: "2024.08.25",
+      organization: "한국 TOEIC 위원회",
       is_main: true,
     },
     {
       name: "OPIC IM3",
       date: "2024.09.14",
-      organization: "",
+      organization: "ACTFL",
       is_main: true,
     },
   ],
   qualification: [
     {
       name: "PCCE Lv3 파이썬",
-      date: "2023-02-19",
-      organization: "",
+      date: "2023.02.19",
+      organization: "주식회사 그렙",
       is_main: true,
     },
     {
       name: "SQLD",
       date: "2024.09.20",
-      organization: "",
+      organization: "한국데이터산업진흥원",
       is_main: true,
     },
     {
@@ -69,13 +70,13 @@ export const profileData = {
     {
       name: "리눅스 마스터 2급 1차",
       date: "2차 준비중",
-      organization: "",
+      organization: "한국정보통신진흥협회",
       is_main: true
     },
     {
       name: "네트워크 관리사 2급 필기",
       date: "실기 준비중",
-      organization: "",
+      organization: "한국정보통신자격협회",
       is_main: true
     }
   ],
@@ -114,14 +115,14 @@ export const profileData = {
       icon: reactIcon,
       level: "중",
       descption: "Context API를 통해 전역 상태 관리를 할 수 있으며, 함수형 컴포넌트와 Hooks를 사용하여 컴포넌트를 작성할 수 있습니다.",
-      is_main: false,
+      is_main: true,
     },
     {
       name: "vue",
       icon: vueIcon,
       level: "중",
       descption: "Vue를 이용한 웹 서비스를 개발해본 경험이 있으며, 컴포넌트 기반 개발과 Vuex를 통한 상태 관리를 할 수 있습니다.",
-      is_main: false,
+      is_main: true,
     },
     {
       name: "python",
@@ -136,7 +137,7 @@ export const profileData = {
       icon: djangoIcon,
       level: "중",
       descption: "Django를 이용한 웹 서비스를 개발해본 경험이 있으며, 데이터베이스 설계와 ORM을 활용한 데이터 관리를 할 수 있습니다.",
-      is_main: false,
+      is_main: true,
     },
     {
       name: "C언어",
@@ -160,9 +161,9 @@ export const profileData = {
   ],
   activities : [
     {
-      title: "세종대학교 생명시스템학부 바이오산업자원공학 전공",
+      title: "세종대학교 생명시스템학부 바이오산업자원공학전공",
       type: "education",
-      descption: "생물학, 식물 병리학, 식물 생리학, 분자 육종학, 생화학 등을 학습",
+      descption: "생물학, 식물 병리학, 육종학, 생화학 등을 학습",
       date: "2015.03 - 2020.08",
     },
     {
